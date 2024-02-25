@@ -1,6 +1,6 @@
-function greet
+function greet(name)
 {
-    return "Hello"
+    return "Hello " + name + "!";
 }
 
-console.log(greet);
+console.log(greet("Sarah!"));      
