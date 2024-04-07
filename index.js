@@ -1,9 +1,7 @@
-function addCats(cat1,cat2) {
-  return cat1 + cat2;
+function welcome(name) {
+  return `Welcome, ${name}!!`;
 }
-
-const addCats = (cat1, cat2) => {
-  console.log(cat1 + cat2);
-
-  return cat1 + cat2
+function processPerson(name, func) {
+  return func(name);
 }
+console.log(processPerson(`Sarah`,welcome));
