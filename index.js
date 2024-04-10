@@ -1,12 +1,13 @@
 const person = {
+    name: "John Doe",
+    age: 23,
 };
 
-function updatePersonName(p, newName) {
-    const p2Update = { ...p };
-    
-    p2Update.name = newName;
-    return p2Update;
-}
+const updatePersonName = (p, newName) => ({
+    ...p,
+    name: newName,
+    hobbies: ["reading", "writing"],
+});
 
 const updatedPerson = updatePersonName(person, "Jane Doe");
 console.log(updatedPerson);
